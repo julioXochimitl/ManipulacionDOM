@@ -1,0 +1,33 @@
+<!--Ejercicio 2
+Escriba una función de JavaScript para obtener los valores de Nombre y Apellido del siguiente formulario.
+
+Imprime los nombres en la consola.
+
+Ejemplo de archivo HTML:-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Return first and last name from a form - w3resource</title>
+</head>
+
+<body>
+    <form id="form1" onsubmit="getFormvalue()">
+        First name: <input type="text" name="fname" value="David"><br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" onclik"getFormvalue();" value="Submit">
+    </form>
+
+    <script>
+        function getFormvalue() {
+            var x = document.getElementById("form1");
+
+            alert(x.elements[0].value + " " + x.elements[1].value);
+        }  
+    </script>
+
+</body>
+
+</html>
