@@ -42,3 +42,23 @@ function puntoOcho(){
 
     document.getElementById("funciona").appendChild(para);
 }
+
+
+/*Retarte a ti mismo
+Añadir al ejercicio n.º 4
+Recorre todos los li dentro de la etiqueta ol y dales un color de fondo "verde".
+Elimina el div con una clase de pie de página.*/
+
+function greenColor(){
+    let main = document.querySelectorAll("#container");
+    for(let i = 0; i < main.length; i++){
+        document.querySelector("#container").style.backgroundColor = "green";
+    }
+}
+
+function eliminateDiv(){
+    let main = document.querySelectorAll(".footer");
+    for(let i=0;i<main.length;i++){
+        main[i].remove();
+    }
+}
